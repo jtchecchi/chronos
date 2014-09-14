@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
 <body>
+<center>
 <?php
-echo "<h1>Examples of Pets</h1>";
+echo "<h1>Common Pets</h1>";
 $sp = "<br />";
 $array = array("Dog" , "Cat" , "Mouse" , "Lizard" , "Hamster" , "Snake");
 	echo $sp;
-echo $array[0];
-	echo $sp;
-echo $array[1];
-	echo $sp;
-echo $array[2];
-	echo $sp;
-echo $array[3];
-	echo $sp;
-echo $array[4];
-	echo $sp;
-echo $array[5];
+//echo $array[0];
+//	echo $sp;
+//echo $array[1];
+//	echo $sp;
+//echo $array[2];
+//	echo $sp;
+//echo $array[3];
+//	echo $sp;
+//echo $array[4];
+//	echo $sp;
+//echo $array[5];
+
+//Mental Note: Foreach loop is easier than echoing each output.
+
+foreach ($array as $array) {
+	echo "<li>$array</li>";
+}
+unset($array);
 ?>
+</center>
 </body>
 </html> 
